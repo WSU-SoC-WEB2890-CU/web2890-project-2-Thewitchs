@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>StarWorm Art</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Project 2 ...">
+
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+       <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">STARWORM ART</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="commissions.html">Commissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <!-- Commission Info -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h1 class="fw-bold mb-3">Commission Custom Artwork</h1>
+      <p class="lead mb-4">Looking for something unique? Let's bring your idea to life. Fill out the form below to request a custom piece.</p>
+    </div>
+  </section>
+
+  <!-- Commission Form -->
+  <div class="container pb-5">
+    <form class="row g-4">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Your Name *</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email Address *</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="col-md-12">
+        <label for="artType" class="form-label">Type of Commission *</label>
+        <select class="form-select" id="artType" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Portrait</option>
+          <option>Pet Illustration</option>
+          <option>Custom Apparel</option>
+          <option>Digital Print</option>
+        </select>
+      </div>
+      <div class="col-md-12">
+        <label for="description" class="form-label">Project Description *</label>
+        <textarea class="form-control" id="description" rows="5" placeholder="Describe your idea..." required></textarea>
+      </div>
+      <div class="col-md-6">
+        <label for="budget" class="form-label">Estimated Budget</label>
+        <input type="text" class="form-control" id="budget" />
+      </div>
+      <div class="col-md-6">
+        <label for="deadline" class="form-label">Preferred Deadline</label>
+        <input type="date" class="form-control" id="deadline" />
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary w-100">Submit Request</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      <p>&copy; 2025 Artist Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
