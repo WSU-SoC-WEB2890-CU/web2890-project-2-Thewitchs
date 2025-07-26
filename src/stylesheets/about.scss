@@ -1,0 +1,25 @@
+.about-section {
+  padding: 3rem 1rem;
+  background-color: lighten($accent-color, 45%);
+  text-align: center;
+
+  h2 {
+    color: $secondary-color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+// Review Section Styling
+.card {
+  border-left: 4px solid $accent-color;
+  background-color: lighten($background-light, 2%);
+}
+
+#review {
+  resize: vertical;
+}
