@@ -13,7 +13,7 @@
 
 <body>
        <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">STARWORM ART</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,5 +31,56 @@
       </div>
     </div>
   </nav>
+
+    <!-- Contact Header -->
+  <header class="py-5 text-center contact-section">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Get In Touch</h1>
+      <p class="lead">Please provide your order number (if applicable). All orders are fulfilled through Printful. If you want to know the status of your order, need to start a return, or anything else, let me know.</p>
+    </div>
+  </header>
+
+  <!-- Contact Form -->
+  <section class="container pb-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Reason for contact" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Starwrom Art. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-light"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

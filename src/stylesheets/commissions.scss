@@ -1,0 +1,33 @@
+.commissions-section {
+  padding: 3rem 1rem;
+  background-color: lighten($secondary-color, 35%);
+
+  h2 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .form-label {
+      font-weight: bold;
+    }
+
+    .form-control {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background-color: $secondary-color;
+      color: $text-light;
+      border: none;
+
+      &:hover {
+        background-color: darken($secondary-color, 10%);
+      }
+    }
+  }
+}

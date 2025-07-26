@@ -1,96 +1,56 @@
-// _variables.scss
-$primary-color: #ff6b6b;
-$secondary-color: #6b5b95;
-$accent-color: #88d8b0;
-$background-light: #fff8f0;
-$text-dark: #333;
-$text-light: #fff;
 
-$font-stack: 'Poppins', sans-serif;
 
-// _mixins.scss
-@mixin transition($property) {
-  transition: $property 0.3s ease-in-out;
-}
-
-// main.scss
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import 'variables';
+@import 'mixins';
+@import 'index';
+@import 'about';
+@import 'contact';
+@import 'portfolio';
+@import 'shop';
+@import 'commissions';
 
 body {
-  font-family: $font-stack;
   background-color: $background-light;
-  color: $text-dark;
+  color: $secondary-color;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
 }
 
 .navbar {
-  background-color: $secondary-color;
+  background-color: $accent-color;
 
-  .navbar-brand, .nav-link {
-    color: $text-light;
-    @include transition(color);
+  .nav-link {
+    color: $secondary-color !important;
 
+    &.active,
     &:hover {
-      color: $accent-color;
-    }
-  }
-}
-
-.hero {
-  background: linear-gradient(to bottom right, $primary-color, $accent-color);
-  color: $text-light;
-
-  h1, p {
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-  }
-
-  .btn-primary {
-    background-color: $secondary-color;
-    border: none;
-    @include transition(background-color);
-
-    &:hover {
-      background-color: darken($secondary-color, 10%);
-    }
-  }
-}
-
-.card {
-  border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  
-  @include transition(transform);
-
-  &:hover {
-    transform: scale(1.02);
-  }
-
-  .card-title {
-    color: $primary-color;
-  }
-
-  .btn-outline-primary {
-    border-color: $primary-color;
-    color: $primary-color;
-
-    &:hover {
-      background-color: $primary-color;
-      color: $text-light;
+      color: $primary-color !important;
     }
   }
 }
 
 footer {
-  background-color: $primary-color;
-  color: $text-light;
+  background-color: $secondary-color;
+  color: white;
 
   a {
-    color: $text-light;
-    @include transition(color);
+    color: $accent-color;
 
     &:hover {
-      color: $accent-color;
+      color: lighten($accent-color, 10%);
     }
   }
 }
 
-@import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+

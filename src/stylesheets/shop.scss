@@ -1,0 +1,27 @@
+.shop-section {
+  padding: 3rem 1rem;
+
+  h2 {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    margin-bottom: 2rem;
+
+    .price {
+      font-weight: bold;
+      color: $secondary-color;
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: $text-light;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
